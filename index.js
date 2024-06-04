@@ -48,7 +48,7 @@ let lobby2;
 const sss = []
 let ss = true
 const wss = new ws.Server({
- port:5000,
+ port:8080,
  id:'',
 }, () => console.log('sssssss'))
 
