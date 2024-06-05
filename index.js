@@ -3,7 +3,7 @@ const http = require('https')
 const express = require('express')
 const app = express()
 const Server = http.createServer(app)
-
+const PORT = process.env.PORT || 8080
 
 const players = [{
   method:'connect',
@@ -661,4 +661,4 @@ function broadcastMessage1(message,ws) {
                                                                      
                                                                     }
 
-                                                          Server.listen(() => console.log('ddd'))
+                                                          Server.listen(PORT,() => console.log('ddd'))
