@@ -52,7 +52,24 @@ let lobby2;
 const sss = []
 let ss = true
 
+
+
+
+
+const server = http.createServer(app)
+
+server.listen(PORT, () => { console.log(5000)})
+
+const wss = new ws.Server({
+  server:server,
  
+
+
+  }
+  
+ 
+  
+ }, () => console.log('sssssss'))
   
  
 
