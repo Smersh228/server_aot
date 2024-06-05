@@ -51,10 +51,7 @@ let lobby1 = []
 let lobby2;
 const sss = []
 let ss = true
-const wss = new ws.Server({
-  port:443,
-  Server
- }, () => console.log('sssssss'))
+
  
   
  
