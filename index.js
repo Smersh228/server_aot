@@ -57,8 +57,12 @@ let ss = true
 
 
 const server = http.createServer(app)
+app.get('/',(req,res) => {
 
-server.listen(8089, () => { console.log(5000)})
+res.send('ПАЦАНЫ ИГРА ЗАКРЫТА Я ЗАДОЛБАЛСЯ')
+
+})
+
 
 const wss = new ws.Server({
   server:server,
@@ -71,7 +75,7 @@ const wss = new ws.Server({
   
  }, () => console.log('sssssss'))
   
- 
+app.listen(8089, () => { console.log(5000)})
 
 
  wss.on('connection', function connect(ws) {
